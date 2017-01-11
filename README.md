@@ -239,6 +239,6 @@ From the related sample above, I could determie that the code is written in .NET
 * MN600-841597241E8D9BF6949590C695DF-774D (.NET MailBee license key)
 * MN600-3E3A3C593AD5BAF50F55A4ED60F0-385D (.NET MailBee license key)
 * MN600-AD58AF50F55A60E043E3A3C593ED-874A (.NET MailBee license key)
-* PCMDPWD (tiro a indovinare: PC Mail Daemon Password?)
+* PCMDPWD (educated guess: PC Mail Daemon Password?)
 * WEBDECCERTPWDNFW
 
