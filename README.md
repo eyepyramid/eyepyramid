@@ -14,7 +14,7 @@ Sensitive information was exfiltrated from high-value targets on the Italian sce
   * 1793 passwords
   * keystrokes stolen via a keylogger
 
-Roughly, 87GB of data overall, of course there is much more bejond this, but I don't want to repeat what's already clearly written in the PDF linked above.
+Roughly, 87GB of data overall, of course there is much more beyond this, but I don't want to repeat what's already clearly written in the PDF linked above.
 
 ## When?
 
