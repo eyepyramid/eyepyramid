@@ -46,7 +46,7 @@ The exfiltrated information is referred to, produced/exchanged by, or otherwise 
 
 From what we know, the attacker (or the attackers):
 
-  1. cooked (or, better, modified an existing) malware that seems to be doing hooking of MailBee.NET.dll APIs (a .NET library used for building mail software) to intercept the data handled by mail applications. In particular, one of the MailBee license keys used by the malware writer is (? = uknownw) MN600-D8102?501003102110C5114F1?18-0E8CI (other keys are reported below)
+  1. cooked (or, better, modified an existing) malware that leverages MailBee.NET.dll APIs (a .NET library used for building mail software) to send the exfiltrated data out to dropzones. In particular, one of the MailBee license keys used by the malware writer is (? = uknownw) MN600-D8102?501003102110C5114F1?18-0E8CI (other keys are reported below)
 	2. comprmised (we don't know how) some email accounts (at least 15, from what we know). In particular, accounts belonging to various attorneys and associates,
 	3. the attacker (or the malware, it's not really clear) connects via Tor (for what is worth, the only known exit node is 37.49.226[.]236)
   4. using an email mail server (among the known ones, Aruba's MX 62.149.158[.]90) the attacker sends spear-phisihing email messages to the victims using the compromised accounts s the sender, containing a malicious attachment (unverified information: someone believes the attachment is a PDF)
@@ -228,10 +228,10 @@ From the related sample above, I could determie that the code is written in .NET
 * MDaemon
 * MailDemon (odd: any English-speaking dev would have used “MailDaemon”, unless this is a typo introduced in the Police report)
 * InfoPyramid
-* MN600-849590C695DFD9BF69481597241E-668C (chiave di licenza del componente .NET MailBee)
-* MN600-841597241E8D9BF6949590C695DF-774D (chiave di licenza del componente .NET MailBee)
-* MN600-3E3A3C593AD5BAF50F55A4ED60F0-385D (chiave di licenza del componente .NET MailBee)
-* MN600-AD58AF50F55A60E043E3A3C593ED-874A (chiave di licenza del componente .NET MailBee)
+* MN600-849590C695DFD9BF69481597241E-668C (.NET MailBee license key)
+* MN600-841597241E8D9BF6949590C695DF-774D (.NET MailBee license key)
+* MN600-3E3A3C593AD5BAF50F55A4ED60F0-385D (.NET MailBee license key)
+* MN600-AD58AF50F55A60E043E3A3C593ED-874A (.NET MailBee license key)
 * PCMDPWD (tiro a indovinare: PC Mail Daemon Password?)
 * WEBDECCERTPWDNFW
 
