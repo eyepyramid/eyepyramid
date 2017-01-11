@@ -34,7 +34,7 @@ The exfiltrated information is referred to, produced/exchanged by, or otherwise 
   * tesoro.it
   * finanze.it
   * interno.it
-  * istut.it
+  * istat.it
   * matteorenzi.it
   * partitodemocratico.it
   * pdl.it
