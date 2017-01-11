@@ -43,12 +43,17 @@ The exfiltrated information is referred to, produced/exchanged by, or otherwise 
   * regione.campania.it
   * regione.lombardia.it
   * unibocconi.it
+  * enel.it
+  * aceaspa.it
+  * eni.it
+  * finmeccanica.com
+  * fondiaria-sai.it
 
 ## How?
 
 From what we know, the attacker (or the attackers):
 
-  1. cooked (or, better, modified an existing) malware that leverages MailBee.NET.dll APIs (a .NET library used for building mail software) to send the exfiltrated data out to dropzones. In particular, one of the MailBee license keys used by the malware writer is (? = uknownw) MN600-D8102?501003102110C5114F1?18-0E8CI (other keys are reported below)
+  1. cooked (or, better, modified an existing) malware that, among the traditional C2 communication techniques, it leverages MailBee.NET.dll APIs (a .NET library used for building mail software) to send the exfiltrated data out to dropzones. In particular, one of the MailBee license keys used by the malware writer is (? = uknownw) MN600-D8102?501003102110C5114F1?18-0E8CI (other keys are reported below)
 	2. comprmised (we don't know how) some email accounts (at least 15, from what we know). In particular, accounts belonging to various attorneys and associates,
 	3. the attacker (or the malware, it's not really clear) connects via Tor (for what is worth, the only known exit node is 37.49.226[.]236)
   4. using an email mail server (among the known ones, Aruba's MX 62.149.158[.]90) the attacker sends spear-phisihing email messages to the victims using the compromised accounts s the sender, containing a malicious attachment (unverified information: someone believes the attachment is a PDF)
