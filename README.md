@@ -68,7 +68,7 @@ From what we know, the attacker (or the attackers):
 
 This has been found via “MSIL/Cribz.a”, a clue by [@ReaQta](https://twitter.com/@ReaQta) together with [@emgent](https://twitter.com/@emgent) who convinced me that it's actually a relevant sample. I'm still skeptical, though. It's definitely relevant and related based on what's in it, but it's **not** 2016's EyePyramid.
 
-An analysis has been started on [Hybrid Analysis](https://www.hybrid-analysis.com/sample/d3ad32bcb255e56cd2a768b3cbf6bafda88233288fc6650d0dfa3810be75f74c) (not by me) from what we can see that it does some standard malware operations.
+An analysis has been started on [Hybrid Analysis](https://www.hybrid-analysis.com/sample/d3ad32bcb255e56cd2a768b3cbf6bafda88233288fc6650d0dfa3810be75f74c) (not by me).
 
 ### Encryption (from the related sample)
 * 3DES
@@ -166,7 +166,7 @@ I found these mailservers being used by the malware. Not clear (yet) if its only
 * other (cannot link it to anything)
 	* lu_1974@hotmail[.]com
 
-### Hosts/domains (C&C)
+### Hosts/domains (some are C&C)
 * eyepyramid[.]com
 * hostpenta[.]com
 * ayexisfitness[.]com
