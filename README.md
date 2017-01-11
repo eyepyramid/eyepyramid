@@ -6,13 +6,13 @@ Please feel free to comment here, or send me feedback at via email to: federico 
  
 ## What happened?
 
-Sensitive information was exfiltrated from high-value targets on the Italian scene:
+Sensitive information was exfiltrated from high-value targets on the Italian scene, for instance:
 
   * 18327 usernames
   * 1793 passwords
   * keystrokes stolen via a keylogger
 
-Roughly, 87GB of data overall.
+Roughly, 87GB of data overall, of course there is much more bejond this, but I don't want to repeat what's already clearly written in the PDF linked above.
 
 ## When?
 
@@ -63,6 +63,9 @@ This has been found via “MSIL/Cribz.a”, a clue by [@ReaQta](https://twitter.
 
 An analysis has been started on [Hybrid Analysis](https://www.hybrid-analysis.com/sample/d3ad32bcb255e56cd2a768b3cbf6bafda88233288fc6650d0dfa3810be75f74c) (not by me) from what we can see that it does some standard malware operations.
 
+### Encryption (from the related sample)
+* 3DES
+
 ### Mailservers
 
 I found these mailservers being used by the malware. Not clear (yet) if its only for sending emails, or for information harvesting too.
@@ -92,6 +95,35 @@ I found these mailservers being used by the malware. Not clear (yet) if its only
 * mail[.]live[.]com
 * mail[.]supereva[.]it
 * popmail[.]libero[.]it
+
+### Incomplete list of targeted files
+* .bmp
+* .cab
+* .dwg
+* .dxf
+* .eml
+* .eps
+* .htm
+* .html
+* .jpg
+* .ppt
+* .pptx
+* .pps
+* .pst
+* .rar
+* .rdp
+* .rtf
+* .sln
+* .sql
+* .tif
+* .txt
+* .wpd
+* .wri
+* .xls
+* .xlsx
+* .xml
+* .zip
+* .zipx
 
 ### Email addresses
 
@@ -143,6 +175,20 @@ I found these mailservers being used by the malware. Not clear (yet) if its only
 ### URLs
 * hostpenta[.]com/contacts
 * westlands[.]com/Web/Sites/hostpenta[.]com
+* URL paths (likely related to traffic directed to the C2)
+  * /bin
+  * /captcha
+  * /config
+  * /fail
+  * /jobs
+  * /obj
+  * /replace
+  * /cherr
+  * /cloud
+  * /params
+  * /pks
+  * /tasks
+  * /decepk
 
 ### IPs (C&Cs?)
 * 217.115.113[.]181 (Ireland)
@@ -154,7 +200,6 @@ I found these mailservers being used by the malware. Not clear (yet) if its only
 ### Filenames
 * qbpye.exe - this is the name of an executable written by the malware (obtained from related sample analysis)
   * there are at least other names used by the malware to plant itself on the FS, but these are not confirmed IOCs, so I'm not going to share them yet
-* lcrrr.exe - this is the name of the updated binary that the malware tries to download from a C2 (not the dropzone's C2)
 * InfoPyramid.accdb - database found on hostpenda[.]com containing exfiltrated data
 * hiwater.mrk
 * smtps.xml
