@@ -1,5 +1,7 @@
 # What we know (technically) about EyePyramid
 
+**WARNING:** this is the most up to date version among the various posts that I've released. So, please try to refer to this. Despite being the most up to date one, it's not guaranteed to be 100% accurate: I publish modifications and updates as I analyze the technical info at my disposal, trying to do my best to keep up.
+
 This personal note, translation of its Italian version “[Cosa sappiamo su EyePyramid](https://medium.com/@phretor/cosa-sappiamo-su-eyepyramid-61b5b88c63b8#.fsgi8ch9g),” is meant to be a container of distilled technical information currently available on the EyePyramid case. It is mainly based on [the only official source](http://www.agi.it/pictures/pdf/agi/agi/2017/01/10/132733992-5cec4d88-49a1-4a00-8a01-dde65baa5a68.pdf), slightly enriched through some OSINT and personal searches.
 
 Please feel free to comment here, or send me feedback at via email to: federico at maggi dot cc.
