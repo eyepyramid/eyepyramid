@@ -61,6 +61,36 @@ From what we know, the attacker (or the attackers):
 
 This has been found via “MSIL/Cribz.a”, a clue by [@ReaQta](https://twitter.com/@ReaQta) together with [@emgent](https://twitter.com/@emgent) who convinced me that it's actually a relevant sample. I'm still skeptical, though. It's definitely relevant and related based on what's in it, but it's **not** 2016's EyePyramid.
 
+### Mailservers
+
+I found these mailservers being used by the malware. Not clear (yet) if its only for sending emails, or for information harvesting too.
+
+* smtp[.]gmail[.]com
+* imap[.]gmail[.]com
+* pop[.]gmail[.]com
+* mail[.]libero[.]it
+* out[.]alice[.]it
+* smtp[.]tiscali[.]it
+* box[.]tin[.]it
+* mail[.]tin[.]it
+* imap[.]impresasemplice[.]it
+* out[.]impresasemplice[.]it
+* imap[.]fastwebnet[.]it
+* smtp[.]fastwebnet[.]it
+* in[.]alice[.]it
+* out[.]alice[.]it
+* in[.]virgilio[.]it
+* out[.]virgilio[.]it
+* imap[.]gmail[.]com
+* imap[.]gmx[.]com
+* imap[.]interfree[.]it
+* imap[.]mail[.]ru
+* imap[.]tiscali[.]it
+* mail[.]katamail[.]com
+* mail[.]live[.]com
+* mail[.]supereva[.]it
+* popmail[.]libero[.]it
+
 ### Email addresses
 
 * used by the recent variant as dropzones:
@@ -129,6 +159,8 @@ This has been found via “MSIL/Cribz.a”, a clue by [@ReaQta](https://twitter.
 * alerts.txt
 
 ### Building info (and other source-code-related info)
+From the related sample above, I could determie that the code is written in .NET (>= 4.5.x), source-code-level obfuscation, plus some other obfuscation on the executable. Uses reflection, and I can confirm the use of MailBee, although I haven't been able to recover the license key.
+
 * Visual Studio was used to build “Eye Manager,” (allegedly the name of the botmaster component) 
 * Hangeron (module name)
 * Mailfaker (module name)
