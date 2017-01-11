@@ -22,7 +22,7 @@ Since 2012. Earlier versions of the malware malware (of uknonwn origin, [except 
 
 The exfiltrated information is referred to, produced/exchanged by, or otherwise possessed by private and public Italian citizens, operating in key positions of the Italian State. The known domains of the victims are:
 
-  * enav.it
+  * enav.it (unconfirmed)
   * istruzione.it
   * gdf.it
   * bancaditalia.it
